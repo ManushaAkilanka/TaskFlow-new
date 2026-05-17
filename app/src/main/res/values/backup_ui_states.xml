@@ -1,0 +1,6 @@
+<!-- BACKUP FILE: Use these values to revert the UI if needed -->
+<resources>
+    <!-- Original Splash Background: @color/primary (#5255B3) -->
+    <!-- Original Profile Card: @color/accent_purple (#8255B3) -->
+    <!-- Original Button Styles: TaskFlowButton, TaskFlowButtonDark, TaskFlowButtonRed -->
+</resources>

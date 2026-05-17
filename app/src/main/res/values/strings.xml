@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TaskFlow</string>
+    <string name="stay_on_track">Stay on track, every day</string>
+    <string name="welcome_back">welcome back</string>
+    <string name="sign_up_to_continue">sign up to continue to TaskFlow</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="email">email</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="no_account">No account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="agree_terms">I agree to Terms of Service and Privacy Policy</string>
+    <string name="create_account">Create account</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="add">Add</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="enter_task">Enter your task</string>
+    <string name="ok">ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="developer_info">Developer Info</string>
+    <string name="exit">Exit</string>
+    <string name="profile">Profile</string>
+    <string name="sign_out">Sign-Out</string>
+    <string name="edit_info">Edit Info.</string>
+    <string name="sign_out_title">Sign out?</string>
+    <string name="sign_out_message">Really want to sign out? You\'ll need to sign back to access your tasks</string>
+</resources>

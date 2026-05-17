@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TodoActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/header_card"
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        app:cardBackgroundColor="@color/secondary"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_my_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/my_tasks"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_task"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/input_bg"
+        android:gravity="center"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="26dp"
+        app:icon="@android:drawable/ic_menu_add"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_card" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tasks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_task" />
+
+    <!-- Modern Round Profile Button in Bottom Right -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_profile_nav"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/ic_profile_modern"
+            android:contentDescription="@string/profile"
+            app:tint="@color/primary" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
